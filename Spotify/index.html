@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hidden lg:flex bg-black h-[100px] items-center justify-center">
+        <div class="flex justify-between items-center">
+            <div>
+                <img src="img/Group.png" class="w-[150px]">
+            </div>
+            <div class="flex items-center max-w-[450px] gap-x-4">
+                <a href="#" class="font-inter font-bold text-[15px] text-white hover:text-[#1DB954]">Premium</a>
+                <a href="#" class="font-inter font-bold text-[15px] text-white hover:text-[#1DB954]">Suporte</a>
+                <a href="#" class="font-inter font-bold text-[15px] text-white hover:text-[#1DB954]">Baixar</a>
+                <span class="font-inter font-extrabold text-[15px] text-white">|</span>
+                <a href="#" class="font-inter font-bold text-[15px] text-[#D9DADC] hover:text-white transition">Inscrever-se</a>
+                <a href="#" class="font-inter font-bold text-[15px] text-[#D9DADC] hover:text-white transition">Entrar</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="bg-black h-[80px] flex items-center justify-between px-6 fixed top-0 left-0 w-full z-50">
+        <img src="img/Group.png" class="w-[150px]">
+
+        <input type="checkbox" id="menuToggle" class="peer hidden">
+        <label for="menuToggle" class="md:hidden text-white text-2xl cursor-pointer">
+            ☰
+        </label>
+
+        <div class="hidden md:flex items-center gap-x-6">
+            <a href="#" class="font-inter font-bold text-[15px] text-white hover:text-[#1DB954] transition">Premium</a>
+            <a href="#" class="font-inter font-bold text-[15px] text-white hover:text-[#1DB954] transition">Suporte</a>
+            <a href="#" class="font-inter font-bold text-[15px] text-white hover:text-[#1DB954] transition">Baixar</a>
+            <span class="text-white text-lg">|</span>
+            <a href="#" class="font-inter font-bold text-[15px] text-white hover:text-[#1DB954] transition">Inscrever-se</a>
+            <a href="#" class="font-inter font-bold text-[15px] text-white hover:text-[#1DB954] transition">Entrar</a>
+        </div>
+    </div>
+
+    <div class="fixed top-0 w-full h-full bg-black shadow-lg flex flex-col p-6 space-y-6 transition-all duration-300 peer-checked:left-0 md:hidden">
+        <label for="menuToggle" class="text-white text-2xl self-end cursor-pointer">✖</label>
+
+        <nav class="flex flex-col space-y-4 mt-4 items-center">
+            <a href="#" class="font-inter font-bold text-[15px] text-white text-lg hover:text-[#1DB954] transition">Premium</a>
+            <hr class="color-[#383838]">
+            <a href="#" class="font-inter font-bold text-[15px] text-white text-lg hover:text-[#1DB954] transition">Suporte</a>
+            <hr class="color-[#383838]">
+            <a href="#" class="font-inter font-bold text-[15px] text-white text-lg hover:text-[#1DB954] transition">Baixar</a>
+            <hr class="color-[#383838]">
+        </nav>
+    </div>
+</body>
+</html>
